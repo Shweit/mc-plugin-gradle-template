@@ -1,4 +1,4 @@
-# PollMaster Plugin
+# Untitled Plugin
 <img src="https://img.shields.io/github/actions/workflow/status/Shweit/REPO/runtime.yml" /> <img src="https://img.shields.io/github/v/release/Shweit/REPO" /> <img src="https://img.shields.io/github/license/Shweit/REPO" />
 
 ## Overview
