@@ -10,6 +10,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -37,9 +38,11 @@ public final class UpdateChecker implements Listener {
         if (event.getPlayer().hasPermission("untitled.version")) {
             if (checkForPluginUpdate()) {
                 event.getPlayer().sendMessage(ChatColor.GREEN + Translator.getTranslation("update_available_player_join"));
-                event.getPlayer().sendMessage(ChatColor.GREEN + Translator.getTranslation("current_version")
-                        + ChatColor.GOLD + Untitled.getInstance().getDescription().getVersion());
-                event.getPlayer().sendMessage(ChatColor.GREEN + Translator.getTranslation("new_version") + ChatColor.GOLD + latestVersion);
+
+                event.getPlayer().sendMessage(ChatColor.GREEN + Translator.getTranslation("current_version",
+                        Map.of("version", Untitled.getInstance().getDescription().getVersion())));
+                event.getPlayer().sendMessage(ChatColor.GREEN + Translator.getTranslation("new_version",
+                        Map.of("version", latestVersion)));
             }
         }
     }

@@ -1,9 +1,12 @@
 package com.shweit.untitled;
 
+import com.shweit.untitled.commands.RegisterCommands;
 import com.shweit.untitled.utils.Translator;
 import com.shweit.untitled.utils.UpdateChecker;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.configuration.file.FileConfiguration;
+
+import java.io.File;
 
 public final class Untitled extends JavaPlugin {
 
@@ -16,6 +19,7 @@ public final class Untitled extends JavaPlugin {
         Translator.loadLanguageFile();
 
         getServer().getPluginManager().registerEvents(new UpdateChecker(), this);
+        RegisterCommands.register();
     }
 
     @Override

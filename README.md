@@ -32,7 +32,7 @@ gradle build
 ### Setting up the Minecraft Server
 3. Copy the generated JAR file to the `plugins` directory of your Minecraft server.
 ```shell
-cp build/libs/PLUGIN-*.jar /path/to/your/minecraft/server/plugins
+cp build/libs/untitled-*.jar /path/to/your/minecraft/server/plugins
 ```
 4. Start or restart your Minecraft server.
 ```shell
