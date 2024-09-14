@@ -22,7 +22,7 @@ Description
 1. Clone the repository to your local machine.
 ```shell
 git clone git@github.com:Shweit/REPO.git
-cd ChestSorter
+cd REPO
 ```
 ### Building the Project
 2. Build the project using Gradle.
