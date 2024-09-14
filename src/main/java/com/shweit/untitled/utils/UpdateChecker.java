@@ -14,7 +14,7 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public final class UpdateChecker implements Listener {
+public final class  UpdateChecker implements Listener {
     private static final String GITHUB_API_URL = "https://api.github.com/repos/Shweit/REPO/releases/latest";
     private static final String USER_AGENT = "Mozilla/5.0";
     public String latestVersion;
